@@ -28,4 +28,4 @@ _Italic text_
 
 [This is a link](http://www.stilldrinking.org/programming-sucks?switch=homophoner)
 
-![This is an imange]()
+![This is an imange](code-horror.gif)
