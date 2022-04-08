@@ -1,0 +1,1 @@
+![image](Captures/Labs/Lab-2/code-horror.gif)
