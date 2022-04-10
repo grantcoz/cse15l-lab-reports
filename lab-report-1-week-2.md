@@ -60,9 +60,14 @@
 
 ![](Captures/Lab-reports/lab-report-1-week-2/Capture6.PNG)
 
-3. Once you have you the file created you can now copy over your file to the server by using `scp` which stands for secure copy. 
+3. Once you have you the file created you can now copy over your file to the server by using `scp` which stands for secure copy. Use this command to copy WhereAmI.java to the home directory of your account on the server: `scp WhereAmI.java cs15lsp22zzz@ieng6.ucsd.edu:~/`
 
-
+4. Once you have copied the file over to the server run the code in the file again. See what is different from when you ran the code on your client computer. Your interactions on the terminal should look similar to this. ![](Captures/Lab-reports/lab-report-1-week-2/Capture7.PNG)
 
 ## Setting an SSH Key
+
+1. With the ability to `scp` to and from the client and the server it becomes cumbersome to constantly ssh and type your password to login to the server. This is where ssh-keygen comes in.
+    - The idea is that keygen will create a pair of keys called private and public and you will be save the public key on the server and the private key on the client.
+
+
 ## Optimizing Remote Running
