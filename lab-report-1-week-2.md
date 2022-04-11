@@ -26,20 +26,11 @@
 
 ## Trying Some Commands
 
-- When in the terminal there are various commands that can help. Try some commands and see what they do. Here is a list of some commands that you should try.
+1. When in the terminal there are various commands that can help. Try some commands and see what they do. Here is a list of some commands that you should try.
 
-1. ls
-2. ls -a
-3. ls -l
-4. ls -t
-5. ls -lat
-6. pwd
-7. cd 
-8. cd ..
-9. cd ~
-10. clear
+- ls, ls -a, ls -l, ls -t, ls -lat, pwd, cd, cd .., cd ~ , clear
 
-- There are plenty of other commands to try though. Here is a link for a cheat on some commands. [Linux command cheat sheet](https://linuxconfig.org/linux-commands-cheat-sheet)
+2. There are plenty of other commands to try though. Here is a link for a cheat on some commands. [Linux command cheat sheet](https://linuxconfig.org/linux-commands-cheat-sheet)
 
 ![](Captures/Lab-reports/lab-report-1-week-2/Capture5.PNG)
 
@@ -47,14 +38,16 @@
 
 1. For this next part we will be transfering a file from our client computer to the server. Copy this code, create a new file, and name the file WhereAmI.java
 
-`class WhereAmI {
+````
+class WhereAmI {
     public static void main(String[] args) {
         System.out.println(System.getProperty("os.name"));
         System.out.println(System.getProperty("user.name"));
         System.out.println(System.getProperty("user.home"));
         System.out.println(System.getProperty("user.dir"));
     }
-}`
+}
+````
 
 2. If you have java installed you can run this code in the terminal by using 'javac WhereAmI.java' to compile the code and 'java WhereAmI.java' to run the code. The output of this code should look similar to this.
 
