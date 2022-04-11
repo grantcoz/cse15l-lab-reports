@@ -67,7 +67,27 @@
 ## Setting an SSH Key
 
 1. With the ability to `scp` to and from the client and the server it becomes cumbersome to constantly ssh and type your password to login to the server. This is where ssh-keygen comes in.
-    - The idea is that keygen will create a pair of keys called private and public and you will be save the public key on the server and the private key on the client.
+    - The idea is that keygen will create a pair of keys called private and public, you will then save the public key on the server and the private key on the client. 
 
+2. To Create this keys, you need to type in the command `ssh-keygen`. The terminal will then ask you where you want to save these keys (the default location is fine just press enter) and for a password (just press enter for a blank password, this is recommended). Your keys are now saved in the file location of your choosing. However, if you are on windows you need to follow these extra steps. 
+
+[Windows extra steps](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+
+3. Now sign into the server, we are creating a fold/directory to save the key. To do this type in `mkdir` (which stands for "make directory") and call the directory .ssh (the dot means this will become a hidden file). The command should look like this `mkdir .ssh`. You will not be able to see this directory if you use the normal `ls` you must use `ls -a` or `ls -lat` to see the .ssh directory.
+
+4. Once you have created the .ssh folder sign out of the server and copy over the public key to the server. If you used the default location to save your keys on your pc then the command should look similar to this, if not then just make sure the path is correct. 
+
+`scp /Users/<user-name>/.ssh/id_rsa.pub
+cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+5. If you have done everything correctly you should be able to sign in without having to use a password. You terminal should look similar to this. ![](Captures/Lab-reports/lab-report-1-week-2/Capture8.PNG)
 
 ## Optimizing Remote Running
+
+1. Let's wrap this up sharing a few short cuts when using the terminal.
+
+2. You can have a command immediatly execute after and ssh command like this ![](Captures/Lab-reports/lab-report-1-week-2/Capture9.PNG)
+
+3. You can also execute multiple commands at once by using semicolons to seperate commands. ![](Captures/Lab-reports/lab-report-1-week-2/Capture10.PNG)
+
+4. And lastly and probably the most important and simplies tip is the up-arrow. By using the up/down arrows you can recall previous commands that you have run. This can help save time when having to do the same thing over and over again. 
