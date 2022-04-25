@@ -1,31 +1,3 @@
-# Heading 1
+[Link for lab report 1](https://grantcoz.github.io/cse15l-lab-reports/lab-report-1-week-2)
 
-## Heading 2
-
-### Heading 3
-
-**Bold text**
-
-*Italic text*
-
-_Italic text_
-
-> This is a blockquote
-
-1. This
-2. is
-3. an
-4. ordered
-5. list
-
-- This
-- is
-- an
-- unordered
-- list
-
-`This is a code block`
-
-[This is a link](http://www.stilldrinking.org/programming-sucks?switch=homophoner)
-
-![This is an imange](code-horror.gif)
+[Link for lab report 2](https://grantcoz.github.io/cse15l-lab-reports/lab-report-2-week-4)
