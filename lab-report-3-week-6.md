@@ -27,13 +27,11 @@ User cs15lsp22zzz (use your username)
 
 ## Task 2: Setup Github Access from ieng6
 
-### Show where the public key you made is stored on Github and in your user account.
+### Show where the public key you made is stored on Github.
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture4.png)
 
-![](Captures/Lab-reports/lab-report-3-week-6/Capture12.png)
-
-### Show where the private key you made is stored on your user account as a screenshot.
+### Show where the private and public keys you made are stored on your user account as a screenshot.
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture5.png)
 
@@ -61,7 +59,7 @@ Host *
 
 - This video really helped me with this: [Setting Up SSH Keys for GitHub](https://www.youtube.com/watch?v=8X4u9sca3Io). This step gave me a really hard time hence I felt the need to type in all of the steps.
 
-## Copy whole directories with scp -r
+## Task 3: Copy whole directories with scp -r
 
 ### Show copying your whole markdown-parse directory to your ieng6 account.
 
