@@ -31,6 +31,8 @@ User cs15lsp22zzz (use your username)
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture4.png)
 
+![](Captures/Lab-reports/lab-report-3-week-6/Capture12.png)
+
 ### Show where the private key you made is stored on your user account as a screenshot.
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture5.png)
