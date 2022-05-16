@@ -31,7 +31,7 @@ User cs15lsp22zzz (use your username)
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture4.png)
 
-### how where the private key you made is stored on your user account (but not its contents) as a screenshot.
+### Show where the private key you made is stored on your user account as a screenshot.
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture5.png)
 
@@ -45,7 +45,7 @@ User cs15lsp22zzz (use your username)
 
 - I first logged into the server and cd into the .ssh directory to create my keys. However instead of using the typical `ssh-keygen`, I used 'ssh-keygen -t ed25519 -C example@gmail.com' where the email is the email you used for your github account. 
 
-- After generating the key type in `eval "$(ssh-agent -s)"` and you should get something like this for output `Agent pid 19842` but the number is different.
+- After generating the key, type in `eval "$(ssh-agent -s)"` and you should get something like this for output `Agent pid 19842` but the number is different.
 
 - Once that is done create a config file in the .ssh diretory and type in this
 
@@ -55,7 +55,7 @@ Host *
   IdentityFile ~/.ssh/id_ed25519
 ````
 
-- After creating and editing the config file `ssh-add ~/.ssh/config` and then type in ssh -T github@github.com. Once this is done you should be able to commit and push from the server. However use the ssh link from github for this to work properly
+- After creating and editing the config file tpye in `ssh-add ~/.ssh/config` and then type in `ssh -T github@github.com`. Once this is done you should be able to commit and push from the server. However use the ssh link from github for this to work properly
 
 - This video really helped me with this: [Setting Up SSH Keys for GitHub](https://www.youtube.com/watch?v=8X4u9sca3Io). This step gave me a really hard time hence I felt the need to type in all of the steps.
 
@@ -73,9 +73,13 @@ Host *
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture10.png)
 
-### Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
+### Show combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
 
 ![](Captures/Lab-reports/lab-report-3-week-6/Capture11.png)
 
 - To copy the directory I used the this command `scp -r markdown-parse ieng6:~/`
-- To copy the directoy, ssh, compile and run on the same line was kind of a hassle. Everytime I tried just use the typical javac and java commands for the test it would give a "cannot find symbol"x error. My best guest is that my client and the server are using different versions of java so I need to specifically call the version of java on the server to compile and run the code. I also needed to compile the MarkdownParse.java file. I believe this was needed due to the MarkdownParseTest.java relies on MarkdownParse.java for it to run.
+- To copy the directoy, ssh, compile and run on the same line was kind of a hassle. Everytime I tried just use the typical javac and java commands for the test it would give a "cannot find symbol"x error. My best guest is that my client and the server are using different versions of java so I need to specifically call the version of java on the server to compile and run the code. I also needed to compile the MarkdownParse.java file. I believe this was needed due to the MarkdownParseTest.java relies on MarkdownParse.java for it to run. Here is the command in the screenshot
+
+````
+scp -r *.java *.md lib/ ieng6:~/; ssh ieng6 "cd markdown-parse; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/javac MarkdownParse.java; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-se-14/jdk-14.0.2/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+````
