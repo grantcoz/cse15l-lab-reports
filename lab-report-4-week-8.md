@@ -15,11 +15,11 @@
 
 ### Picture of my tests for my repository
 
-![](Captures/Lab-reports/lab-report-4-week-8/my-tests.PNG)
+![my-tests](Captures/Lab-reports/lab-report-4-week-8/my-tests.PNG)
 
 ### Picture of the output for my repository
 
-![](Captures/Lab-reports/lab-report-4-week-8/my-output.PNG)
+![my-output](Captures/Lab-reports/lab-report-4-week-8/my-output.PNG)
 
 ### Questions about each snippet
 
@@ -48,11 +48,11 @@ text = text.replace("\n", "").replace("\r", "");
 
 ### Picture of my tests for the other repository
 
-![](Captures/Lab-reports/lab-report-4-week-8/other-tests.PNG)
+![other-tests](Captures/Lab-reports/lab-report-4-week-8/other-tests.PNG)
 
 ### Picture of the output for the other repository
 
-![](Captures/Lab-reports/lab-report-4-week-8/other-output.PNG)
+![other-output](Captures/Lab-reports/lab-report-4-week-8/other-output.PNG)
 
 ### Questions about each snippet
 
